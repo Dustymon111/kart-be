@@ -1,28 +1,31 @@
 import mongoose from "mongoose";
- 
+// import Shop from "./ShopModel.js";
+
 const Product = mongoose.Schema({
-    name:{
+    shop_id: {type: mongoose.Types.ObjectId, ref:'Shops'},
+    name:{  
         type: String,
         immutable: true,
-        required: true
-    },
-    stock:{
-        type: Number,
         required: true
     },
     price:{
         type: Number,
         required: true
     },
+    qty: {
+        type: Number
+    },
     is_discount:{
         type: Boolean,
         required: true
     },
-    discount_type : {
-        type : String
+    discount_value: {
+        type: Number,
+        default: 0
     },
-    dicount_value: {
-        type: Number
+    is_selected : {
+        type: Boolean,
+        default : false
     },
     image_url: {
         type: String

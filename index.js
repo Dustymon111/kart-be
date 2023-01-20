@@ -3,6 +3,7 @@ import express from "express";
 import Routes from "./routes/Routes.js";
 import UserRoutes from "./routes/UserRoutes.js";
 import ProductRoutes from "./routes/ProductRoutes.js"
+import CartRoutes from "./routes/CartRoutes.js"
 import mongoose from "mongoose";
 import cors from "cors";
 dotenv.config()
@@ -27,4 +28,5 @@ app.use(express.urlencoded({extended : false}))
 app.use(Routes);
 app.use(UserRoutes);
 app.use(ProductRoutes);
+app.use(CartRoutes);
 app.listen(3000, () => console.log('Server Running at http://localhost:3000'));

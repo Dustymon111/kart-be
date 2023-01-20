@@ -1,13 +1,17 @@
 import mongoose from "mongoose";
-import Product from "./ProductModel"; 
+import Product from "./ProductModel.js"; 
+
 
 const Shop = mongoose.Schema({
     name:{
         type: String,
-        immutable: true,
         required: true
     },
-    Products: [Product]
+    is_selected: {
+        type: Boolean,
+        default: false
+    },
+    Products: [Product.schema]
     
 });
  
