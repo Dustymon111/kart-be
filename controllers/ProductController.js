@@ -41,7 +41,7 @@ export const updateProduct = async (req, res) => {
 
 export const updateStock = async (req, res) => {
     try {
-        const product = await ProductSchema.findByIdAndUpdate({_id:req.params.id}, {stock: req.body.stock}, {new:true});
+        const product = await ProductSchema.findByIdAndUpdate({_id:req.params.id}, {qty: req.body.qty}, {new:true});
         res.status(200).json(product);
     } catch (error) {
         res.status(400).json({message: error.message});
@@ -53,6 +53,15 @@ export const deleteProduct = async (req, res) => {
     try {
         const deletedProduct = await ProductSchema.deleteOne({_id:req.params.id});
         res.status(200).json(deletedProduct);
+    } catch (error) {
+        res.status(400).json({message: error.message});
+    }
+}
+
+export const productChecked = async (req, res) => {
+    try {
+        const checked = await ProductSchema.findByIdAndUpdate({_id:req.params.id}, {is_selected: req.body.is_selected}, {new:true})
+        res.status(200).json(checked);
     } catch (error) {
         res.status(400).json({message: error.message});
     }

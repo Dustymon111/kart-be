@@ -4,19 +4,15 @@ import mongoose from "mongoose";
 const ProductSchema = new mongoose.Schema({
     name:{  
         type: String,
-        immutable: true,
-        required: true
     },
     price:{
         type: Number,
-        required: true
     },
     qty: {
         type: Number
     },
     is_discount:{
         type: Boolean,
-        required: true
     },
     discount_value: {
         type: Number,
@@ -28,6 +24,10 @@ const ProductSchema = new mongoose.Schema({
     },
     image_url: {
         type: String
+    },
+    shop: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "cart"
     }
 });
  

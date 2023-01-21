@@ -5,9 +5,11 @@ import {
     saveProduct,
     updateProduct,
     deleteProduct,
-    updateStock
+    updateStock,
+    productChecked
 } from "../controllers/ProductController.js";
- 
+
+
 const router = express.Router();
  
 router.get('/Products', getProducts);
@@ -16,5 +18,6 @@ router.post('/Products', saveProduct);
 router.post('/Products/update-stock/:id', updateStock);
 router.patch('/Products/:id', updateProduct);
 router.delete('/Products/:id', deleteProduct);
+router.post('/Products/:id/update-selected', productChecked)
  
 export default router;

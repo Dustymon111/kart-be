@@ -12,7 +12,10 @@ const CartSchema = new Schema({
         type: Boolean,
         default: false
     },
-    Products: [Product.schema]
+    Products: [{
+        type: Schema.Types.ObjectId,
+        ref: 'product'
+    }]
 });
  
 const Cart = mongoose.model("cart", CartSchema)
