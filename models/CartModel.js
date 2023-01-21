@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
 import Product from "./ProductModel.js"; 
 
+const Schema = mongoose.Schema
 
-const Shop = mongoose.Schema({
+const CartSchema = new Schema({
     name:{
         type: String,
         required: true
@@ -12,7 +13,8 @@ const Shop = mongoose.Schema({
         default: false
     },
     Products: [Product.schema]
-    
 });
  
-export default mongoose.model('Shops', Shop);
+const Cart = mongoose.model("cart", CartSchema)
+
+export default Cart

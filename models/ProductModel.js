@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 // import Shop from "./ShopModel.js";
 
-const Product = mongoose.Schema({
-    shop_id: {type: mongoose.Types.ObjectId, ref:'Shops'},
+const ProductSchema = new mongoose.Schema({
     name:{  
         type: String,
         immutable: true,
@@ -32,4 +31,6 @@ const Product = mongoose.Schema({
     }
 });
  
-export default mongoose.model('Products', Product);
+const Product = mongoose.model('product', ProductSchema);
+
+export default Product

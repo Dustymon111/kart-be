@@ -1,7 +1,6 @@
 import dotenv from 'dotenv'
 import express from "express";
 import Routes from "./routes/Routes.js";
-import UserRoutes from "./routes/UserRoutes.js";
 import ProductRoutes from "./routes/ProductRoutes.js"
 import CartRoutes from "./routes/CartRoutes.js"
 import mongoose from "mongoose";
@@ -26,7 +25,6 @@ db.once('open', () => console.log('Terhubung Ke Database...'));
 app.use(express.json());
 app.use(express.urlencoded({extended : false}))
 app.use(Routes);
-app.use(UserRoutes);
 app.use(ProductRoutes);
 app.use(CartRoutes);
 app.listen(3000, () => console.log('Server Running at http://localhost:3000'));

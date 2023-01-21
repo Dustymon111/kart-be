@@ -1,0 +1,255 @@
+[
+    {
+        "name":"Toko 1",
+        "Products": [
+        {   
+            "name" : "Nokia E3100 Plus True Wireless Earbuds Bluetooth Earphone TWS HD - Hitam",
+            "price" : 1099000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 81,
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/28/4c7201e2-d14f-46c0-9ebb-ac04272d0021.jpg"
+        },
+        {  
+            "name" : "MSI THIN GF63 GTX1650 4GB/ I5 11400H 8GB 512SSD W11 15.6FHD IPS 144HZ",
+
+            "price" : 10049000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/790c4142-176d-4766-b2d2-53032856ce05.jpg"
+        }
+    ]
+    },
+    {
+        "name":"Toko 2",
+        "Products":[
+        {   
+            "name" : "Asus TUF 15 FX506LHB",
+            "price" : 13599000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 28,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/3/2b2fe9d2-e77f-4f4d-8d5f-ddce3aa584c1.jpg"
+        },
+        {  
+            "name" : "Nokia Wireless Bluetooth 5.0 Headphone / Headset with Mic E1200- Black",
+            "price" : 399000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 78,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/2/cc2fccc6-9f06-4366-b7c6-03db2b26a6d3.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 3",
+        "Products":[
+        {   
+            "name" : "Edifier Stax Spirit S3 Bluetooth Headphone",
+            "price" : 3820000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 31,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/f60aa21c-0598-4f81-bdbe-9d84338a1357.jpg"
+        },
+        {  
+            "name" : "Lenovo GM2 PRO Wireless Bluetooth Gaming Earphones Headset 5.3 TWS - Hitam",
+            "price" : 135000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/3/9624da99-c99c-4077-8fdc-1e2865dd090a.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 4",
+        "Products":[
+        {   
+            "name" : "ASUS TUF GAMING F15 FX506HC - I5-11400H 8G 512G RTX 3050 144Hz W10 OHS - DDR4 8GB",
+            "price" : 12589000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 7,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/5/3f894a6d-a4d9-4e01-b7f4-f6cbfc899d07.jpg"
+        },
+        {  
+            "name" : "ASUS ROG Flow X16 GV601RW Ryzen 9-6900HS RTX3070Ti 16G 1TB 16 QHD W11\"",
+            "price" : 39069000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 9,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/5/70c3b8f2-9dee-4013-9e66-5496cbe79d3f.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 5",
+        "Products":[
+        {   
+            "name" : "ASUS ROG Flow X13 GV301RC RYZEN 9-6900HS 16GB 1TB RTX3050 120Hz W11",
+            "price" : 26299000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/20/76b87e11-7c32-44f7-b848-8419018f2b66.png"
+        },
+        {  
+            "name" : "LENOVO LEGION 5 15ACH6 DYID RYZEN 5-5600H 16GB 512 SSD RTX3050 WIN11",
+            "price" : 17499000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/6/1cecafd1-31fb-4128-b3af-e663532f2077.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 6",
+        "Products":[
+        {   
+            "name" : "MSI RAIDER GE67HX 12UGS 062ID i9-12900HX 32GB 1TB RTX3070Ti OLED QHD",
+            "price" : 46999000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/a1ddce7d-6255-42cd-a49a-928178c94f59.jpg"
+        },
+        {  
+            "name" : "ACER PC Nitro 50 N50-640 i7-12700 16GB 512GB SSD RTX3050 8GB W11+OHS21",
+            "price" : 21499000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/28/ca1bd14e-ae9a-4d43-bc9e-08f95e2484a8.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 7",
+        "Products":[
+        {   
+            "name" : "Pc intel core i7 ram 16gb vga card 4Gb + ssd",
+            "price" : 3350000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/23/3dca2e92-c8c7-4168-933f-9415e83dbfcd.jpg"
+        },
+        {  
+            "name" : "Pc core i7 ram 16 gb ssd256 hdd 2 tb led 24 white edition",
+            "price" : 6745000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/3/e8a5bbb6-0c99-4945-b65d-cc66ef68e3ae.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 8",
+        "Products":[
+        {   
+            "name" : "Pc gaming core i7 ram 16 vga 4gb ssd128 hdd500 led 24 in full set",
+            "price" : 8615000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/28/91c422c3-eecf-421a-ab03-a1e9a237d46e.jpg"
+        },
+        {  
+            "name" : "ASUS ROG PC DESKTOP G15CF-7F3113703W/ASUS PC i7/PC GAMING i7/PC DESIGN",
+            "price" : 32900000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/17/ad0dc96b-35dc-47e1-b14f-cd7f3a1266ea.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 9",
+        "Products":[
+        {   
+            "name" : "ASUS ROG PC DESKTOP G10CE-701153600T/ASUS PC i7/PC GAMING i7/ASUS GAME",
+            "price" : 25500000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/6/f7fae53c-34f9-47d1-8677-9c2fd54dba00.jpg"
+        },
+        {  
+            "name" : "ASUS TUF Gaming VG249Q1A Gaming Monitor 23.8 inc/MONITOR ASUS GAMING",
+            "price" : 3850000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/9/82ca4ff7-b8e4-4df9-aeb2-22bdee83875a.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 10",
+        "Products":[
+        {   
+            "name" : "Monitor Game Portable ASUS ROG Strix XG16AHP-W 144 Hz NVIDIA G-SYNC",
+            "price" : 7949900,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/c96b9af7-0c5e-41dd-b748-7f9ea6205022.jpg"
+        },
+        {  
+            "name" : "Monitor HP 23.8 Inch HP M24FWA IPS FHD",
+            "price" : 2349900,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/15/a9234faf-60a5-49dc-82fc-bd83147dd4eb.png"
+        }
+        ]
+    },
+    {
+        "name":"Toko 11",
+        "Products":[
+        {   
+            "name" : "HP MONITOR M24FWA 23.8\" FHD IPS 75Hz - 23,8\"",
+            "price" : 2250000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/17/5c17f7eb-93aa-468b-96bf-5393fb5851c3.jpg"
+        },
+        {  
+            "name" : "VG272 LV 27\" IPS FHD E2E Frameless 0.5ms 165Hz DCI-P3 90% HDR400",
+            "price" : 4099000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/12/9962c287-5a1e-4678-ab3c-cbb2ee6e3c9f.jpg"
+        }
+        ]
+    },
+    {
+        "name":"Toko 12",
+        "Products":[
+        {   
+            "name" : "Colorful GeForce RTX 3060 Ti NB-V 8GB GDDR6 - Ampere Graphic Card",
+            "price" : 15591000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/10/20/d6c5fd3b-105a-45e4-8bff-801c4a3265cf.jpg"
+        },
+        {  
+            "name" : "ZOTAC GeForce RTX 3060 Twin Edge 12GB GDDR6 - RTX3060 DDR6",
+            "price" : 5950000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/20/7429676a-812e-4a9c-b32f-bf3bfd15e0f5.jpg"
+        }
+        ]
+}
+]
