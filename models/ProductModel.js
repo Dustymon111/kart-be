@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-// import Shop from "./ShopModel.js";
+
+const Schema = mongoose.Schema
 
 const ProductSchema = new mongoose.Schema({
     name:{  
@@ -26,7 +27,7 @@ const ProductSchema = new mongoose.Schema({
         type: String
     },
     shop: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "cart"
     }
 });

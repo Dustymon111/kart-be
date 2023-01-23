@@ -3,23 +3,28 @@ import Product from "../models/ProductModel.js"
 import data from "../data.json" assert { type: "json" };
 
 export const getCart = async (req, res) => {
-
-    let cart = await Cart.find()
-    .populate('Products')
-    // console.log(getCart);
-
+    let cart = await Cart.find().populate('Products')
     let total = 0;
     cart.map(shop=>{
+        let allChecked = true
         shop.Products.map(product=>{
+            if (!product.is_selected){
+                allChecked = false
+            }
+            allChecked? shop.is_selected = true : shop.is_selected = false
             if(shop.is_selected || product.is_selected) {
-                total += product.qty * product.price
+                if (product.is_discount){
+                    total += (product.price - (product.price * product.discount_value / 100)) * product.qty
+                }else{
+                    total += product.qty * product.price
+                }
+                if (shop.is_selected && !product.is_selected){
+                    total -= product.price * product.qty
+                }
             }
         })
     })
-
     res.json({total, cart})
-    
-    
 }
 
 export const saveCart = async (req, res) => {
@@ -45,6 +50,7 @@ export const shopChecked = async (req, res) => {
         checked.Products.map(async item => {
             await Product.findByIdAndUpdate({_id: item}, {is_selected: req.body.is_selected}, {new:true})
         })
+        
         res.status(200).json(checked);
     } catch (error) {
         res.status(400).json({message: error.message});
