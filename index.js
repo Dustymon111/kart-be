@@ -25,4 +25,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}))
 app.use(ProductRoutes);
 app.use(CartRoutes);
-app.listen(3000, () => console.log('Server Running at http://localhost:3000'));
+app.listen(8080, () => console.log('Server Running at http://localhost:8080'));
