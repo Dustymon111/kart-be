@@ -8,7 +8,10 @@ export const getCart = async (req, res) => {
         let total = 0;
         cart.map(shop=>{
             let allChecked = true
-            shop.Products.map(product=>{
+            shop.Products.map(async product=>{
+                if (shop.Products == []){
+                    await Cart.deleteMany({_id: shop._id})
+                }
                 if (!product.is_selected){
                     allChecked = false
                 }
@@ -35,13 +38,10 @@ export const getCart = async (req, res) => {
 
 export const saveCart = async (req, res) => {
     try {
-        // const insertedCart = await cart.save();
         data.map(async sh=>{
             const products = await Product.insertMany(sh.Products)
             sh.Products = products.map(p => p._id)
             const cart = await Cart.create(sh)
-            // console.log(cart);
-            // console.log(cart.Products);
             cart.Products.map(async id =>{
                 await Product.findByIdAndUpdate({_id: id}, {shop: cart._id}, {new:true})
             })
@@ -65,16 +65,40 @@ export const shopChecked = async (req, res) => {
     }
 }
 
+export const checkAll = async (req, res) => {
+    try {
+        let allChecked = true
+        const cart = await Cart.find()
+        for (let i = 0; i < cart.length; i++){
+            if (!cart[i].is_selected){
+                allChecked = false
+                break
+            }
+        }
+        if(!allChecked){
+            await Cart.updateMany({is_selected:false}, {is_selected:true})
+            await Product.updateMany({is_selected:false}, {is_selected:true})
+        }else{
+            await Cart.updateMany({is_selected:true}, {is_selected:false})
+            await Product.updateMany({is_selected:true}, {is_selected:false})
+        }
+        res.status(200).json({message: "Success"})
+    }catch(err){
+        res.status(400).json({message: err})
+    }
+}
+
+
 export const deleteShop = async (req, res) => {
     try{
         let cart = await Cart.find().populate('Products')
-        console.log(cart);
-        cart.map(shop=>{
-            shop.Products.map(async item => {
-                if(shop.is_selected) {
-                    await Product.deleteMany({shop: shop._id})
-                    await Cart.findByIdAndDelete({_id: shop._id})
-                }else if (item.is_selected){
+        cart.map(async shop=>{
+            if(shop.is_selected) {
+                await Cart.findByIdAndDelete({_id: shop._id})
+                await Product.deleteMany({shop: shop._id})
+            }
+            shop.Products.map(async item => {  
+                if (item.is_selected){
                     await Product.deleteMany({_id: item._id})
                 }
             })
