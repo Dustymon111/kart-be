@@ -15,7 +15,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 mongoose.connect(process.env.DATABASE_URL);
-
+  
 const db = mongoose.connection;
 
 db.on('error', (error) => console.log(error));
