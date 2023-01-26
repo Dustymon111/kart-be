@@ -1,5 +1,5 @@
 import Product from "../models/ProductModel.js";
-// import Cart from "../models/CartModel.js";
+import Cart from "../models/CartModel.js";
 
 export const getProducts = async (req, res) => {
     try {
@@ -32,7 +32,28 @@ export const deleteProduct = async (req, res) => {
 
 export const productChecked = async (req, res) => {
     try {
-        const checked = await Product.findByIdAndUpdate({_id:req.params.id}, {is_selected: req.body.is_selected}, {new:true})
+        let allChecked = true
+        const checked = await Product.findByIdAndUpdate({_id: req.params.id}, {is_selected: req.body.is_selected}, {new:true})
+        // const shopProduct = await Product.find({shop: checked.shop})
+        // shopProduct.map(async item => {
+        //     if (!item.is_selected){
+        //         allChecked = false
+        //     }
+        //     if (!allChecked){
+        //         await Cart.findByIdAndUpdate({_id: item.shop}, {is_selected: false})
+        //     }else{
+        //         await Cart.findByIdAndUpdate({_id: item.shop}, {is_selected: true})
+        //     }
+        // })
+        const cart = await Cart.find().populate('Products')
+        cart.map(async shop => {
+            shop.Products.map(product => {
+                if (!product.is_selected){
+                    allChecked = false
+                }
+            })
+            allChecked? await Cart.findByIdAndUpdate({_id: shop._id}, {is_selected: true}):  await Cart.findByIdAndUpdate({_id: shop._id}, {is_selected: false})
+        })
         res.status(200).json(checked);
     } catch (error) {
         res.status(400).json({message: error.message});

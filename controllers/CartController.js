@@ -7,23 +7,17 @@ export const getCart = async (req, res) => {
         let cart = await Cart.find().populate('Products')
         let total = 0;
         cart.map(shop=>{
-            let allChecked = true
             shop.Products.map(async product=>{
                 if(shop.is_selected || product.is_selected) {
                     if (product.is_discount){
                         total += (product.price - (product.price * product.discount_value / 100)) * product.qty
                     }else{
                         total += product.qty * product.price
-                    }
-                    
+                    }           
                     if (shop.is_selected && !product.is_selected){
                         total -= product.price * product.qty
                     }
                 }
-                if (!product.is_selected){
-                    allChecked = false
-                }
-                allChecked? await Cart.findByIdAndUpdate({_id: shop._id}, {is_selected: true}):  shop.is_selected = false
             })
 
         })
@@ -55,6 +49,7 @@ export const shopChecked = async (req, res) => {
         checked.Products.map(async item => {
             await Product.findByIdAndUpdate({_id: item}, {is_selected: req.body.is_selected}, {new:true})
         })        
+
         res.status(200).json(checked);
     } catch (error) {
         res.status(400).json({message: error.message});
