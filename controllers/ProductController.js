@@ -21,15 +21,6 @@ export const updateStock = async (req, res) => {
     }
 }
 
-export const deleteProduct = async (req, res) => {
-    try {
-        const deletedProduct = await Product.deleteOne({_id:req.params.id});
-        res.status(200).json(deletedProduct);
-    } catch (error) {
-        res.status(400).json({message: error.message});
-    }
-}
-
 export const productChecked = async (req, res) => {
     try {
         let allChecked = true
@@ -40,7 +31,6 @@ export const productChecked = async (req, res) => {
                     path: 'Products'
                 }
             })
-        console.log(checked);
         checked.shop.Products.map(async item => {
             if (!item.is_selected){
                 allChecked = false

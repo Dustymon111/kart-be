@@ -31,13 +31,14 @@ export const saveCart = async (req, res) => {
     try {
         data.map(async sh=>{
             const products = await Product.insertMany(sh.Products)
-            sh.Products = products.map(p => p._id)
-            const cart = await Cart.create(sh)
+            let temp = {...sh}
+            temp.Products = products.map(p => p._id)
+            const cart = await Cart.create(temp)
             cart.Products.map(async id =>{
                 await Product.findByIdAndUpdate({_id: id}, {shop: cart._id}, {new:true})
             })
         })
-        res.status(201).json({message:"Success"});
+        res.status(200).json({message: "Success"})
     } catch (error) {
         res.status(400).json({message: error.message});
     }
@@ -82,8 +83,8 @@ export const checkAll = async (req, res) => {
 
 export const deleteShop = async (req, res) => {
     try{
-        await Cart.deleteMany({is_selected: true})
-        await Product.deleteMany({is_selected: true})
+        await Product.deleteMany({is_selected: {$eq:true}})
+        await Cart.deleteMany({is_selected: {$eq:true}})
         res.status(200).json({message: "Item has been deleted"})
     }catch(err){
         res.status(400).json({message: err.message})

@@ -1,6 +1,6 @@
 [
     {
-        "name":"Toko 1",
+        "name":"Toko Abby",
         "Products": [
         {   
             "name" : "Nokia E3100 Plus True Wireless Earbuds Bluetooth Earphone TWS HD - Hitam",
@@ -12,17 +12,24 @@
         },
         {  
             "name" : "MSI THIN GF63 GTX1650 4GB/ I5 11400H 8GB 512SSD W11 15.6FHD IPS 144HZ",
-
             "price" : 10049000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
             "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/790c4142-176d-4766-b2d2-53032856ce05.jpg"
+        },
+        {  
+            "name" : "MSI KATANA GF66 I7 12700H 16GB 512SSD RTX3050TI 4GB W11 15.6FHD 144HZ - UNIT",
+            "price" : 18399000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/2/17/d976a85b-0a20-46c8-b45c-e7985b24b5d6.jpg"
         }
     ]
     },
     {
-        "name":"Toko 2",
+        "name":"Toko Jimmy",
         "Products":[
         {   
             "name" : "Asus TUF 15 FX506LHB",
@@ -39,11 +46,19 @@
             "is_discount" : true,
             "discount_value" : 78,
             "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/2/cc2fccc6-9f06-4366-b7c6-03db2b26a6d3.jpg"
+        },
+        {   
+            "name" : "KOORUI 27E1Q 27inch 2K FAST-IPS 144Hz rotary lifting esports display - 27E1",
+            "price" : 2789999,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 15,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/24/fa34baff-f246-48bf-8f59-25d3b628615a.jpg"
         }
-        ]
+    ]
     },
     {
-        "name":"Toko 3",
+        "name":"Toko Sinar Mega Bintang",
         "Products":[
         {   
             "name" : "Edifier Stax Spirit S3 Bluetooth Headphone",
@@ -64,7 +79,7 @@
         ]
     },
     {
-        "name":"Toko 4",
+        "name":"Medan Komputer",
         "Products":[
         {   
             "name" : "ASUS TUF GAMING F15 FX506HC - I5-11400H 8G 512G RTX 3050 144Hz W10 OHS - DDR4 8GB",
@@ -85,7 +100,7 @@
         ]
     },
     {
-        "name":"Toko 5",
+        "name":"Toko Merak Jingga",
         "Products":[
         {   
             "name" : "ASUS ROG Flow X13 GV301RC RYZEN 9-6900HS 16GB 1TB RTX3050 120Hz W11",
@@ -102,11 +117,27 @@
             "is_discount" : false,
             "discount_value" : 0,
             "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/6/1cecafd1-31fb-4128-b3af-e663532f2077.jpg"
+        },
+        {   
+            "name" : "Asus TUF Gaming VG279QM 27\" 280Hz G-SYNC Compatible Gaming Monitor",
+            "price" : 5099000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 13,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/8/bd43db57-c637-4ad7-bfa9-69b2b1e0bca9.jpg"
+        },
+        {   
+            "name" : "ASUS TUF Gaming VG279QM 27\" 280Hz FHD 1ms G-Sync - Gaming Monitor",
+            "price" : 5199000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/14/e6f7d602-edf6-47fd-a3a3-026fc2f84c5e.jpg"
         }
         ]
     },
     {
-        "name":"Toko 6",
+        "name":"Sinar Komputer",
         "Products":[
         {   
             "name" : "MSI RAIDER GE67HX 12UGS 062ID i9-12900HX 32GB 1TB RTX3070Ti OLED QHD",
@@ -127,7 +158,7 @@
         ]
     },
     {
-        "name":"Toko 7",
+        "name":"Toko Budi",
         "Products":[
         {   
             "name" : "Pc intel core i7 ram 16gb vga card 4Gb + ssd",
@@ -148,7 +179,7 @@
         ]
     },
     {
-        "name":"Toko 8",
+        "name":"Toko Gila",
         "Products":[
         {   
             "name" : "Pc gaming core i7 ram 16 vga 4gb ssd128 hdd500 led 24 in full set",
@@ -169,7 +200,7 @@
         ]
     },
     {
-        "name":"Toko 9",
+        "name":"Asus Official Medan",
         "Products":[
         {   
             "name" : "ASUS ROG PC DESKTOP G10CE-701153600T/ASUS PC i7/PC GAMING i7/ASUS GAME",
@@ -190,7 +221,7 @@
         ]
     },
     {
-        "name":"Toko 10",
+        "name":"Asri Komputer",
         "Products":[
         {   
             "name" : "Monitor Game Portable ASUS ROG Strix XG16AHP-W 144 Hz NVIDIA G-SYNC",
@@ -211,7 +242,7 @@
         ]
     },
     {
-        "name":"Toko 11",
+        "name":"HD Telkom",
         "Products":[
         {   
             "name" : "HP MONITOR M24FWA 23.8\" FHD IPS 75Hz - 23,8\"",
@@ -232,7 +263,7 @@
         ]
     },
     {
-        "name":"Toko 12",
+        "name":"Nvidia Official Medan",
         "Products":[
         {   
             "name" : "Colorful GeForce RTX 3060 Ti NB-V 8GB GDDR6 - Ampere Graphic Card",

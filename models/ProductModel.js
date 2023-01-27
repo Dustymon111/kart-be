@@ -5,26 +5,30 @@ const Schema = mongoose.Schema
 const ProductSchema = new mongoose.Schema({
     name:{  
         type: String,
+        required: true
     },
     price:{
         type: Number,
+        required: true
     },
     qty: {
-        type: Number
+        type: Number,
+        required: true
     },
     is_discount:{
         type: Boolean,
     },
     discount_value: {
         type: Number,
-        default: 0
+        required: true
     },
     is_selected : {
         type: Boolean,
         default : false
     },
     image_url: {
-        type: String
+        type: String,
+        required: true
     },
     shop: {
         type: Schema.Types.ObjectId,
