@@ -1,12 +1,11 @@
-import Cart from "../models/CartModel.js";
+import Shop from "../models/ShopModel.js";
 import Product from "../models/ProductModel.js"
-import data from "../data.json" assert { type: "json" };
 
 export const getCart = async (req, res) => {
     try{
-        let cart = await Cart.find().populate('Products')
+        let cart = await Shop.find().populate('Products')
         let total = 0;
-        cart.map(shop=>{
+        cart.map(shop=> {
             shop.Products.map(async product=>{
                 if(shop.is_selected || product.is_selected) {
                     if (product.is_discount){
@@ -29,15 +28,6 @@ export const getCart = async (req, res) => {
 
 export const saveCart = async (req, res) => {
     try {
-        data.map(async sh=>{
-            const products = await Product.insertMany(sh.Products)
-            let temp = {...sh}
-            temp.Products = products.map(p => p._id)
-            const cart = await Cart.create(temp)
-            cart.Products.map(async id =>{
-                await Product.findByIdAndUpdate({_id: id}, {shop: cart._id}, {new:true})
-            })
-        })
         res.status(200).json({message: "Success"})
     } catch (error) {
         res.status(400).json({message: error.message});

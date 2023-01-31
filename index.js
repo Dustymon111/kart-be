@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 import express from "express";
 import ProductRoutes from "./routes/ProductRoutes.js"
 import CartRoutes from "./routes/CartRoutes.js"
+import ShopRoutes from './routes/ShopRoutes.js'
 import mongoose from "mongoose";
 import cors from "cors";
 dotenv.config()
@@ -25,4 +26,5 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}))
 app.use(ProductRoutes);
 app.use(CartRoutes);
+app.use(ShopRoutes)
 app.listen(8080, () => console.log('Server Running at http://localhost:8080'));

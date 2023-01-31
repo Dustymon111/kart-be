@@ -1,22 +1,24 @@
 [
     {
-        "name":"Toko Abby",
-        "Products": [
+        "name":"Toko Komputer Abby",
+        "products": [
         {   
             "name" : "Nokia E3100 Plus True Wireless Earbuds Bluetooth Earphone TWS HD - Hitam",
             "price" : 1099000,
             "qty" : 1,
             "is_discount" : true,
             "discount_value" : 81,
-            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/28/4c7201e2-d14f-46c0-9ebb-ac04272d0021.jpg"
-        },
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/28/4c7201e2-d14f-46c0-9ebb-ac04272d0021.jpg",
+            "category" : 1
+        },  
         {  
             "name" : "MSI THIN GF63 GTX1650 4GB/ I5 11400H 8GB 512SSD W11 15.6FHD IPS 144HZ",
             "price" : 10049000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/790c4142-176d-4766-b2d2-53032856ce05.jpg"
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/790c4142-176d-4766-b2d2-53032856ce05.jpg",
+            "category" : 1
         },
         {  
             "name" : "MSI KATANA GF66 I7 12700H 16GB 512SSD RTX3050TI 4GB W11 15.6FHD 144HZ - UNIT",
@@ -24,91 +26,100 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/2/17/d976a85b-0a20-46c8-b45c-e7985b24b5d6.jpg"
+            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/2/17/d976a85b-0a20-46c8-b45c-e7985b24b5d6.jpg",
+            "category" : 1
         }
     ]
     },
     {
-        "name":"Toko Jimmy",
-        "Products":[
+        "name":"Toko Fashion Jimmy",
+        "products":[
         {   
-            "name" : "Asus TUF 15 FX506LHB",
-            "price" : 13599000,
+            "name" : "Jackersfield x Tahilalats x Shinchan Funtivity Camp Shirt Beige - L",
+            "price" : 429000,
             "qty" : 1,
             "is_discount" : true,
-            "discount_value" : 28,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/3/2b2fe9d2-e77f-4f4d-8d5f-ddce3aa584c1.jpg"
+            "discount_value" : 14,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/12/adac1e9a-fbdf-4246-a884-55738d8d4d57.jpg",
+            "category" : 2
         },
         {  
-            "name" : "Nokia Wireless Bluetooth 5.0 Headphone / Headset with Mic E1200- Black",
-            "price" : 399000,
-            "qty" : 1,
-            "is_discount" : true,
-            "discount_value" : 78,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/2/cc2fccc6-9f06-4366-b7c6-03db2b26a6d3.jpg"
-        },
-        {   
-            "name" : "KOORUI 27E1Q 27inch 2K FAST-IPS 144Hz rotary lifting esports display - 27E1",
-            "price" : 2789999,
-            "qty" : 1,
-            "is_discount" : true,
-            "discount_value" : 15,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/24/fa34baff-f246-48bf-8f59-25d3b628615a.jpg"
-        }
-    ]
-    },
-    {
-        "name":"Toko Sinar Mega Bintang",
-        "Products":[
-        {   
-            "name" : "Edifier Stax Spirit S3 Bluetooth Headphone",
-            "price" : 3820000,
-            "qty" : 1,
-            "is_discount" : true,
-            "discount_value" : 31,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/f60aa21c-0598-4f81-bdbe-9d84338a1357.jpg"
-        },
-        {  
-            "name" : "Lenovo GM2 PRO Wireless Bluetooth Gaming Earphones Headset 5.3 TWS - Hitam",
-            "price" : 135000,
+            "name" : "KAOS POLOSHIRT/KERAH POLOS - NAVY",
+            "price" : 25000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/3/9624da99-c99c-4077-8fdc-1e2865dd090a.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/1/16/64cb6407-6280-49f2-a6e3-aa877093592b.jpg",
+            "category" : 2
+        },
+        {   
+            "name" : "Kemeja Unisex Erigo Short Shirt Lawrence Maroon - S",
+            "price" : 350000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 72,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/3/0c13ef9c-4d4c-40b5-84c1-a71f538de915.jpg",
+            "category" : 2
+        }
+    ]
+    },
+    {
+        "name":"Toko Sinar Fashion",
+        "products":[
+        {   
+            "name" : "Kaos pria O-neck polos M L XL XXL bahan katun kombet menyerap keri - abu muda",
+            "price" : 20000,
+            "qty" : 1,
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/f60aa21c-0598-4f81-bdbe-9d84338a1357.jpg",
+            "category" : 2
+        },
+        {  
+            "name" : "Kemeja Pantai Pria Baju Hawai Rayon Printing Full Print Motif Abstrak - Z07",
+            "price" : 150000,
+            "qty" : 1,
+            "is_discount" : true,
+            "discount_value" : 60,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/22/fa9e2af1-ac81-449b-9e7c-7655c2626bf2.jpg",
+            "category" : 2
         }
         ]
     },
     {
-        "name":"Medan Komputer",
-        "Products":[
+        "name":"Medan Toserba",
+        "products":[
         {   
-            "name" : "ASUS TUF GAMING F15 FX506HC - I5-11400H 8G 512G RTX 3050 144Hz W10 OHS - DDR4 8GB",
-            "price" : 12589000,
+            "name" : "Sigma Official S Series Spin Mop Peralatan Alat Pel Rumah Tangga",
+            "price" : 129000,
             "qty" : 1,
-            "is_discount" : true,
-            "discount_value" : 7,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/5/3f894a6d-a4d9-4e01-b7f4-f6cbfc899d07.jpg"
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/5/3f894a6d-a4d9-4e01-b7f4-f6cbfc899d07.jpg",
+            "category" : 3
         },
         {  
-            "name" : "ASUS ROG Flow X16 GV601RW Ryzen 9-6900HS RTX3070Ti 16G 1TB 16 QHD W11\"",
-            "price" : 39069000,
+            "name" : "Steam cleaner pembersih uap multifungsi / Alat uap rumah tangga mobil",
+            "price" : 1350000,
             "qty" : 1,
-            "is_discount" : true,
-            "discount_value" : 9,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/5/70c3b8f2-9dee-4013-9e66-5496cbe79d3f.jpg"
+            "is_discount" : false,
+            "discount_value" : 0,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/10/f78ab924-328b-4f5e-8ac7-070c02b8a3d7.jpg",
+            "category" : 3
         }
         ]
     },
     {
         "name":"Toko Merak Jingga",
-        "Products":[
+        "products":[
         {   
             "name" : "ASUS ROG Flow X13 GV301RC RYZEN 9-6900HS 16GB 1TB RTX3050 120Hz W11",
             "price" : 26299000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/20/76b87e11-7c32-44f7-b848-8419018f2b66.png"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/20/76b87e11-7c32-44f7-b848-8419018f2b66.png",
+            "category" : 1
         },
         {  
             "name" : "LENOVO LEGION 5 15ACH6 DYID RYZEN 5-5600H 16GB 512 SSD RTX3050 WIN11",
@@ -116,7 +127,8 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/6/1cecafd1-31fb-4128-b3af-e663532f2077.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/6/1cecafd1-31fb-4128-b3af-e663532f2077.jpg",
+            "category" : 1
         },
         {   
             "name" : "Asus TUF Gaming VG279QM 27\" 280Hz G-SYNC Compatible Gaming Monitor",
@@ -124,7 +136,8 @@
             "qty" : 1,
             "is_discount" : true,
             "discount_value" : 13,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/8/bd43db57-c637-4ad7-bfa9-69b2b1e0bca9.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/8/bd43db57-c637-4ad7-bfa9-69b2b1e0bca9.jpg",
+            "category" : 1
         },
         {   
             "name" : "ASUS TUF Gaming VG279QM 27\" 280Hz FHD 1ms G-Sync - Gaming Monitor",
@@ -132,20 +145,22 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/14/e6f7d602-edf6-47fd-a3a3-026fc2f84c5e.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/14/e6f7d602-edf6-47fd-a3a3-026fc2f84c5e.jpg",
+            "category" : 1
         }
         ]
     },
     {
         "name":"Sinar Komputer",
-        "Products":[
+        "products":[
         {   
             "name" : "MSI RAIDER GE67HX 12UGS 062ID i9-12900HX 32GB 1TB RTX3070Ti OLED QHD",
             "price" : 46999000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/a1ddce7d-6255-42cd-a49a-928178c94f59.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/13/a1ddce7d-6255-42cd-a49a-928178c94f59.jpg",
+            "category" : 1
         },
         {  
             "name" : "ACER PC Nitro 50 N50-640 i7-12700 16GB 512GB SSD RTX3050 8GB W11+OHS21",
@@ -153,62 +168,68 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/28/ca1bd14e-ae9a-4d43-bc9e-08f95e2484a8.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/28/ca1bd14e-ae9a-4d43-bc9e-08f95e2484a8.jpg",
+            "category" : 1
         }
         ]
     },
     {
         "name":"Toko Budi",
-        "Products":[
+        "products":[
         {   
-            "name" : "Pc intel core i7 ram 16gb vga card 4Gb + ssd",
-            "price" : 3350000,
+            "name" : "Gantungan Sapu dan Alat Rumah Tangga / Magic Hanging Mop Hanger",
+            "price" : 60000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/23/3dca2e92-c8c7-4168-933f-9415e83dbfcd.jpg"
+            "image_url" : "https://images.tokopedia.net/img/cache/900/product-1/2018/1/10/249575138/249575138_91421bfc-2d6e-42f5-b9e7-c87008834a4e_451_450.jpg",
+            "category" : 3
         },
         {  
-            "name" : "Pc core i7 ram 16 gb ssd256 hdd 2 tb led 24 white edition",
-            "price" : 6745000,
+            "name" : "Sapu Mini Pembersih Rumah Tangga / Alat Bersih Interior Mobil",
+            "price" : 25000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/3/e8a5bbb6-0c99-4945-b65d-cc66ef68e3ae.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/product-1/2019/6/1/13042723/13042723_ddcfd228-b017-4180-80de-ee950857deba_630_630",
+            "category" : 3
         }
         ]
     },
     {
         "name":"Toko Gila",
-        "Products":[
+        "products":[
         {   
-            "name" : "Pc gaming core i7 ram 16 vga 4gb ssd128 hdd500 led 24 in full set",
-            "price" : 8615000,
+            "name" : "Alat Pembersih Debu Ac Dapat Digunakan Kembali Untuk Rumah Tangga",
+            "price" : 357000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/28/91c422c3-eecf-421a-ab03-a1e9a237d46e.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2022/8/16/32452437-d719-49db-9036-f07d2c6ff18d.jpg",
+            "category" : 3
         },
         {  
-            "name" : "ASUS ROG PC DESKTOP G15CF-7F3113703W/ASUS PC i7/PC GAMING i7/PC DESIGN",
-            "price" : 32900000,
+            "name" : "GM Bear Sikat Dorong Lantai Kamar Mandi (2 in 1) 1803 - Sikat WC Wiper",
+            "price" : 129000,
             "qty" : 1,
-            "is_discount" : false,
-            "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/17/ad0dc96b-35dc-47e1-b14f-cd7f3a1266ea.jpg"
+            "is_discount" : true,
+            "discount_value" : 77,
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/11/8/1f9dcf10-bac5-48bd-a8bc-a2027cf5826d.jpg",
+            "category" : 3
         }
         ]
     },
     {
         "name":"Asus Official Medan",
-        "Products":[
+        "products":[
         {   
             "name" : "ASUS ROG PC DESKTOP G10CE-701153600T/ASUS PC i7/PC GAMING i7/ASUS GAME",
             "price" : 25500000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/6/f7fae53c-34f9-47d1-8677-9c2fd54dba00.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/6/f7fae53c-34f9-47d1-8677-9c2fd54dba00.jpg",
+            "category" : 1
         },
         {  
             "name" : "ASUS TUF Gaming VG249Q1A Gaming Monitor 23.8 inc/MONITOR ASUS GAMING",
@@ -216,41 +237,45 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/9/82ca4ff7-b8e4-4df9-aeb2-22bdee83875a.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/9/82ca4ff7-b8e4-4df9-aeb2-22bdee83875a.jpg",
+            "category" : 1
         }
         ]
     },
     {
-        "name":"Asri Komputer",
-        "Products":[
+        "name":"Asri Fashion",
+        "products":[
         {   
-            "name" : "Monitor Game Portable ASUS ROG Strix XG16AHP-W 144 Hz NVIDIA G-SYNC",
-            "price" : 7949900,
+            "name" : "Osella Baju Perempuan Kemeja Lengan Panjang Shell Pink - L/XL",
+            "price" : 379900,
             "qty" : 1,
-            "is_discount" : false,
-            "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/31/c96b9af7-0c5e-41dd-b748-7f9ea6205022.jpg"
+            "is_discount" : true,
+            "discount_value" : 60,
+            "image_url": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2021/10/14/ca5c8d9f-1d95-4690-b62a-bd49581d5f8e.jpg",
+            "category" : 2
         },
         {  
-            "name" : "Monitor HP 23.8 Inch HP M24FWA IPS FHD",
-            "price" : 2349900,
+            "name" : "Dress Elevation Hitam shop at velvet",
+            "price" : 199000,
             "qty" : 1,
-            "is_discount" : false,
-            "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/15/a9234faf-60a5-49dc-82fc-bd83147dd4eb.png"
+            "is_discount" : true,
+            "discount_value" : 15,
+            "image_url": "https://images.tokopedia.net/img/cache/900/product-1/2018/9/12/31463548/31463548_19e9c919-2272-4a12-9999-a2a304c891a0_1080_1080.png",
+            "category" : 2
         }
         ]
     },
     {
         "name":"HD Telkom",
-        "Products":[
+        "products":[
         {   
             "name" : "HP MONITOR M24FWA 23.8\" FHD IPS 75Hz - 23,8\"",
             "price" : 2250000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/17/5c17f7eb-93aa-468b-96bf-5393fb5851c3.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/17/5c17f7eb-93aa-468b-96bf-5393fb5851c3.jpg",
+            "category" : 1
         },
         {  
             "name" : "VG272 LV 27\" IPS FHD E2E Frameless 0.5ms 165Hz DCI-P3 90% HDR400",
@@ -258,20 +283,22 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/12/9962c287-5a1e-4678-ab3c-cbb2ee6e3c9f.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/12/9962c287-5a1e-4678-ab3c-cbb2ee6e3c9f.jpg",
+            "category" : 1
         }
         ]
     },
     {
         "name":"Nvidia Official Medan",
-        "Products":[
+        "products":[
         {   
             "name" : "Colorful GeForce RTX 3060 Ti NB-V 8GB GDDR6 - Ampere Graphic Card",
             "price" : 15591000,
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/10/20/d6c5fd3b-105a-45e4-8bff-801c4a3265cf.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/10/20/d6c5fd3b-105a-45e4-8bff-801c4a3265cf.jpg",
+            "category" : 1
         },
         {  
             "name" : "ZOTAC GeForce RTX 3060 Twin Edge 12GB GDDR6 - RTX3060 DDR6",
@@ -279,7 +306,8 @@
             "qty" : 1,
             "is_discount" : false,
             "discount_value" : 0,
-            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/20/7429676a-812e-4a9c-b32f-bf3bfd15e0f5.jpg"
+            "image_url": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/20/7429676a-812e-4a9c-b32f-bf3bfd15e0f5.jpg",
+            "category" : 1
         }
         ]
 }

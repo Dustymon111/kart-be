@@ -3,6 +3,10 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema
 
 const ProductSchema = new mongoose.Schema({
+    shop: {
+        type: Schema.Types.ObjectId,
+        ref: "shop"
+    },
     name:{  
         type: String,
         required: true
@@ -30,10 +34,7 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    shop: {
-        type: Schema.Types.ObjectId,
-        ref: "cart"
-    }
+    category: Number
 });
  
 const Product = mongoose.model('product', ProductSchema);
