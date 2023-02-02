@@ -25,7 +25,6 @@ export const saveCart = async (req, res) => {
     })
     try {
         let data = await cart.save()
-        console.log(data);
         res.status(200).json({message: "Success"})
     } catch (error) {
         res.status(400).json({message: error.message});
