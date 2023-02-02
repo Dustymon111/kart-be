@@ -5,6 +5,9 @@ import CartRoutes from "./routes/CartRoutes.js"
 import ShopRoutes from './routes/ShopRoutes.js'
 import { authRoute } from './routes/AuthRoutes.js';
 import { userRoute } from './routes/UserRoutes.js';
+import data from './data.json' assert {type: "json"}
+import Product from './models/ProductModel.js';
+import Shop from './models/ShopModel.js';
 import db from './models/index.js';
 
 import cors from "cors";
@@ -44,18 +47,35 @@ userRoute(app)
 
 
 function initial() {
-  Role.estimatedDocumentCount((err, count) => {
-      if (!err && count === 0) {
-          new Role({
-              name: "user"
-          }).save(err => {
-              if (err) {
-                  console.log("error", err);
-              }
-              console.log("added 'user' to roles collection");
-          });
-      }
-  });
+    Role.estimatedDocumentCount((err, count) => {
+        if (!err && count === 0) {
+            new Role({
+                name: "user"
+            }).save(err => {
+                if (err) {
+                    console.log("error", err);
+                }
+                console.log("added 'user' to roles collection");
+            });
+        }
+    });
+    Shop.estimatedDocumentCount((err, count ) => {
+        if (!err && count == 0){
+            try{
+                data.map(async sh=>{
+                    const prd = await Product.insertMany(sh.products)
+                    let temp = {...sh}
+                    temp.products = prd.map(p => p._id)
+                    const cart = await Shop.create(temp)
+                    cart.products.map(async id =>{
+                        await Product.findByIdAndUpdate({_id: id}, {shop: cart._id}, {new:true})
+                    })
+                })
+            }catch(err){
+                console.log(err);
+            }
+        }
+    })
 }
 
 app.listen(8080, () => console.log('Server Running at http://localhost:8080'));
