@@ -1,25 +1,17 @@
 import Shop from "../models/ShopModel.js";
 import Product from "../models/ProductModel.js"
+import Cart from "../models/CartModel.js";
 
 export const getCart = async (req, res) => {
     try{
-        let cart = await Shop.find().populate('Products')
-        let total = 0;
-        cart.map(shop=> {
-            shop.Products.map(async product=>{
-                if(shop.is_selected || product.is_selected) {
-                    if (product.is_discount){
-                        total += (product.price - (product.price * product.discount_value / 100)) * product.qty
-                    }else{
-                        total += product.qty * product.price
-                    }           
-                    if (shop.is_selected && !product.is_selected){
-                        total -= product.price * product.qty
-                    }
-                }
-            })
-
+        let cart = await Cart.find().populate({
+            path: "product",
+            populate: {
+                path: "shop"
+            }
         })
+        let total = 0
+        
         res.json({total, cart})
     }catch(err){
         res.status(400).json({message: err})
@@ -27,7 +19,13 @@ export const getCart = async (req, res) => {
 }
 
 export const saveCart = async (req, res) => {
+    let cart = new Cart({
+        product: req.body.product,
+        qty: req.body.qty
+    })
     try {
+        let data = await cart.save()
+        console.log(data);
         res.status(200).json({message: "Success"})
     } catch (error) {
         res.status(400).json({message: error.message});
@@ -36,10 +34,10 @@ export const saveCart = async (req, res) => {
 
 export const shopChecked = async (req, res) => {
     try {
-        const checked = await Cart.findByIdAndUpdate({_id:req.params.id}, {is_selected: req.body.is_selected}, {new:true})
-        checked.Products.map(async item => {
-            await Product.findByIdAndUpdate({_id: item}, {is_selected: req.body.is_selected}, {new:true})
-        })        
+        const checked = await Shop.findByIdAndUpdate({_id:req.params.id}, {is_selected: req.body.is_selected}, {new:true})
+        // checked.Products.map(async item => {
+        //     await Product.findByIdAndUpdate({_id: item}, {is_selected: req.body.is_selected}, {new:true})
+        // })        
 
         res.status(200).json(checked);
     } catch (error) {

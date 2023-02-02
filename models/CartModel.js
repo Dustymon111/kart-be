@@ -10,6 +10,10 @@ const CartSchema = Schema({
     qty: {
         type: Number,
         required: true
+    },
+    user_id: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
     }
 })
 
