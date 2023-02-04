@@ -73,6 +73,7 @@ function initial() {
                         await Product.findByIdAndUpdate({_id: id}, {shop: cart._id}, {new:true})
                     })
                 })
+                console.log("added shops and products to shop and product collection");
             }catch(err){
                 console.log(err);
             }
@@ -99,7 +100,7 @@ function initial() {
                 categories.map(cat => {
                     Category.create(cat)
                 })
-                console.log("added 'user' to roles collection");
+                console.log("added product categories to categories collection");
             }catch(err){
                 console.log(err);
             }                     
