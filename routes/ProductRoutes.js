@@ -15,7 +15,7 @@ router.get('/Products', getProducts);
 router.get('/Products/category', getCategory)
 router.post('/Products/category', saveCategory)
 router.get('/Products/:id', getProductsById)
-router.post('/Products/update-stock/:id', updateStock);
+router.put('/Products/update-stock/:id', updateStock);
 router.post('/Products/:id/update-selected', productChecked)
  
 export default router;

@@ -8,8 +8,9 @@ import { userRoute } from './routes/UserRoutes.js';
 import data from './data.json' assert {type: "json"}
 import Product from './models/ProductModel.js';
 import Shop from './models/ShopModel.js';
+import User from './models/UserModel.js';
 import db from './models/index.js';
-
+import bcrypt from "bcryptjs";
 import cors from "cors";
 dotenv.config()
 
@@ -45,7 +46,6 @@ app.use(ShopRoutes)
 authRoute(app)
 userRoute(app)
 
-
 function initial() {
     Role.estimatedDocumentCount((err, count) => {
         if (!err && count === 0) {
@@ -76,6 +76,21 @@ function initial() {
             }
         }
     })
+    User.countDocuments({username: 'user'},(err, count) => {
+        if (!err && count === 0) {
+            new User({
+                username: "user",
+                email: "user@mail.com",
+                fullname: "user",
+                password: bcrypt.hashSync('user', 8)
+            }).save(err => {
+                if (err) {
+                    console.log("error", err);
+                }
+                console.log("added dummy user to User collection");
+            });
+        }
+    });
 }
 
 app.listen(8080, () => console.log('Server Running at http://localhost:8080'));

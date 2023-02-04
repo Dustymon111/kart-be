@@ -18,3 +18,16 @@ export const saveShop = async (req, res) => {
         res.status(400).json({message: err})
     }
 }
+
+export const shopChecked = async (req, res) => {
+    try {
+        const checked = await Shop.findByIdAndUpdate({_id: req.params.id}, {is_selected: req.body.is_selected}, {new:true})
+        checked.products.map(async item => {
+            await Product.findByIdAndUpdate({_id: item}, {is_selected: req.body.is_selected}, {new:true})
+        })        
+
+        res.status(200).json(checked);
+    } catch (error) {
+        res.status(400).json({message: error.message});
+    }
+}
