@@ -30,7 +30,6 @@ export const saveCart = async (req, res) => {
     })
     try {
         const nowCart = await Cart.findOne({product: cart.product})
-        console.log(nowCart);
 
         if (nowCart === null){
             await cart.save()
