@@ -3,9 +3,11 @@ import express from "express";
 import ProductRoutes from "./routes/ProductRoutes.js"
 import CartRoutes from "./routes/CartRoutes.js"
 import ShopRoutes from './routes/ShopRoutes.js'
+import Category from './models/CategoryModel.js';
 import { authRoute } from './routes/AuthRoutes.js';
 import { userRoute } from './routes/UserRoutes.js';
 import data from './data.json' assert {type: "json"}
+import categories from './categories.json' assert {type: "json"}
 import Product from './models/ProductModel.js';
 import Shop from './models/ShopModel.js';
 import User from './models/UserModel.js';
@@ -89,6 +91,18 @@ function initial() {
                 }
                 console.log("added dummy user to User collection");
             });
+        }
+    });
+    Category.estimatedDocumentCount((err, count) => {
+        if (!err && count === 0) {
+            try{
+                categories.map(cat => {
+                    Category.create(cat)
+                })
+                console.log("added 'user' to roles collection");
+            }catch(err){
+                console.log(err);
+            }                     
         }
     });
 }
